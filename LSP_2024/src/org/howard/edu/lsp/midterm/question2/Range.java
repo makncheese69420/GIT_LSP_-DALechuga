@@ -1,20 +1,28 @@
 package org.howard.edu.lsp.midterm.question2;
 
+/**
+ * Range interface contains main range methods
+ */
 public interface Range {
-	// Returns true if v is ≥ lower bound and ≤ upper bound and false otherwise
+	/**
+	 * returns true of value is in the range
+	 * @param value the value thats being checked
+	 * @return true if the value is in the range and false if it isnt
+	 */
 	public boolean contains( int value ); 
 
-	// Returns true if the receiver contains at least 
-	// one value in common with other, and false otherwise
+	/**
+	 * Returns true if the upper bound or lower bound are the same in both ranges
+	 * @param other the other range
+	 * @return true if they share a bound and false if they dont
+	 */
 	public boolean overlaps( Range other );
 
-	// // Returns the number of integers in the range
+	/**
+	 * Returns the difference between the bounds
+	 * @return the size of the bounds
+	 */
 	public int size();
 	
-	 // public boolean equals(Object o);
 	
-	//public int getupper();
-	
-	// public int getlower();
-
 }
